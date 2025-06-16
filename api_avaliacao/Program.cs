@@ -23,6 +23,7 @@ builder.Services.AddDbContext<AppDataContext>
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IItemRepository, ItemRepository>();
+builder.Services.AddScoped<IComentarioRepository, IComentarioRepository>();
 
 
 var chaveJwt = builder.Configuration["JwtSettings:SecretKey"];

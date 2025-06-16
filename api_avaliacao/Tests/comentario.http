@@ -1,7 +1,7 @@
 @url_base = http://localhost:5003/api/item
 @token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtIiwiZXhwIjoxNzUwMTA5MjQxfQ.I_7IvZFE6OYaMHgIFQtB552B5KznJjhoph5Jp4T_pwQ
 
-### Cadastrar item
+### Cadastrar comentario
 POST {{url_base}}/cadastrar
 Authorization: Bearer {{token}}
 Content-Type: application/json
@@ -11,6 +11,6 @@ Content-Type: application/json
     "categoriaId" : 1
 }
 
-### Listar item
+### Listar comentario
 GET {{url_base}}/listar
 Authorization: Bearer {{token}}
